@@ -1,16 +1,26 @@
 PODS:
+  - Bolts/Tasks (1.9.1)
+  - Parse (1.19.1):
+    - Parse/Core (= 1.19.1)
+  - Parse/Core (1.19.1):
+    - Bolts/Tasks (= 1.9.1)
   - youtube-ios-player-helper (1.0.2)
 
 DEPENDENCIES:
+  - Parse
   - youtube-ios-player-helper
 
 SPEC REPOS:
   trunk:
+    - Bolts
+    - Parse
     - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
+  Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
   youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
 
-PODFILE CHECKSUM: c20012a363c39926bbbabf1163c25a7e1e603047
+PODFILE CHECKSUM: c325f78f69c90f0bd2e179d419b1bad728edd6b4
 
 COCOAPODS: 1.9.3
