@@ -15,13 +15,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EWX-mm-5DI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Bf8-DM-X1h">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EWX-mm-5DI">
+                                <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Bf8-DM-X1h" firstAttribute="top" secondItem="h9f-lT-cWn" secondAttribute="top" id="FnI-WF-hah"/>
+                            <constraint firstItem="EWX-mm-5DI" firstAttribute="trailing" secondItem="h9f-lT-cWn" secondAttribute="trailing" id="Lwd-oZ-Ynn"/>
+                            <constraint firstItem="Bf8-DM-X1h" firstAttribute="trailing" secondItem="h9f-lT-cWn" secondAttribute="trailing" id="NRY-3X-gM0"/>
+                            <constraint firstAttribute="bottom" secondItem="EWX-mm-5DI" secondAttribute="bottom" id="h45-kI-M6N"/>
+                            <constraint firstItem="EWX-mm-5DI" firstAttribute="leading" secondItem="h9f-lT-cWn" secondAttribute="leading" id="jcT-xA-zOg"/>
+                            <constraint firstItem="Bf8-DM-X1h" firstAttribute="leading" secondItem="h9f-lT-cWn" secondAttribute="leading" id="pfo-TG-omW"/>
+                            <constraint firstItem="EWX-mm-5DI" firstAttribute="top" secondItem="Bf8-DM-X1h" secondAttribute="bottom" id="v6H-EQ-HxZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h9f-lT-cWn"/>
                     </view>
                     <connections>
