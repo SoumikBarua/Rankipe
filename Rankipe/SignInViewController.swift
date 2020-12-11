@@ -15,8 +15,16 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true{
+            self.performSegue(withIdentifier: "ON_SUCCESSFUL_SIGNIN_SEGUE", sender: self)
+        }
+    }
+    
     
     @IBAction func OnSignInPressed(_ sender: Any) {
         var user = PFUser()
@@ -25,6 +33,7 @@ class SignInViewController: UIViewController {
         
         PFUser.logInWithUsername(inBackground: username, password: Password) { (user, error) in
             if user != nil{
+                UserDefaults.standard.set(true, forKey: "userLoggedIn")
                 self.performSegue(withIdentifier: "ON_SUCCESSFUL_SIGNIN_SEGUE", sender: self)
             }else{
                 print("There is an error \(error?.localizedDescription)")

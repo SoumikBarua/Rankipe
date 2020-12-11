@@ -141,7 +141,7 @@
                     <connections>
                         <outlet property="PasswordLabel" destination="2iX-st-NNA" id="Ehg-RM-amM"/>
                         <outlet property="usernameLabel" destination="cNu-OE-BIj" id="97D-k6-ty7"/>
-                        <segue destination="rYn-kZ-OG7" kind="show" identifier="ON_SUCCESSFUL_SIGNIN_SEGUE" id="UCh-Mb-G5b"/>
+                        <segue destination="Bt3-ft-7VE" kind="show" identifier="ON_SUCCESSFUL_SIGNIN_SEGUE" id="O1y-Mr-0aN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zuc-OB-S4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -330,32 +330,26 @@
                         <outlet property="PasswordLabel" destination="z99-8Z-yQI" id="zkR-fV-0Xt"/>
                         <outlet property="error" destination="Zhc-8L-tK2" id="gEj-jX-DZi"/>
                         <outlet property="username" destination="jAV-rt-0qj" id="3r5-6t-sR9"/>
-                        <segue destination="rYn-kZ-OG7" kind="show" identifier="ON_SUCCESSFUL_SIGNUP_SEGUE" id="FPX-RZ-jXP"/>
+                        <segue destination="Bt3-ft-7VE" kind="show" identifier="ON_SUCCESSFUL_SIGNUP_SEGUE" id="Y8u-KW-Wgd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gH0-nI-73I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-190" y="808"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="3uh-Fn-ugd">
+        <!--RankTab-->
+        <scene sceneID="xma-wz-cnc">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="rYn-kZ-OG7" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="t7V-Y3-XRx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="55Z-pA-NDD"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="V5K-D5-udf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="af7-YD-PWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="RankTab" referencedIdentifier="RankTab" id="Bt3-ft-7VE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cnu-Lr-Pxt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mR0-pO-9LX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284" y="316"/>
+            <point key="canvasLocation" x="1732" y="270"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FPX-RZ-jXP"/>
+        <segue reference="Y8u-KW-Wgd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
@@ -363,9 +357,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
